@@ -1,6 +1,7 @@
 h2 {
   color:$primary-color;
   font-size: rem-calc(42);
+  margin: rem-calc(20 0);
 }
 
 .promo-video {
@@ -56,7 +57,7 @@ h2 {
 }
 
 section.rooms {
-
+  padding: rem-calc(30 0);
   div.room-image {
     position: relative;
 
@@ -75,4 +76,12 @@ section.rooms {
     background-color: $white;
     padding: rem-calc(20);
   }
+}
+
+.button {
+  @include button-style($secondary-color, darken($secondary-color, 10), $white);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: rem-calc(16);
+  margin: rem-calc(20 0);
 }
