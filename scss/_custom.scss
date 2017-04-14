@@ -109,3 +109,47 @@ section.rooms {
 		background-image:url(../assets/images/separators/large/separator01-image.jpg);
 	}
 }
+
+.bar-image {
+	background-image:url(../assets/images/separators/small/separator02-image.jpg);
+	@include breakpoint(medium) {
+		background-image:url(../assets/images/separators/medium/separator02-image.jpg);
+	}
+	@include breakpoint(large) {
+		background-image:url(../assets/images/separators/large/separator02-image.jpg);
+	}
+}
+
+/** About us **/
+.about-us-gallery {
+	@include breakpoint(medium) {
+		height:rem-calc(560);
+		position:relative;
+	}
+	@include breakpoint(medium) {
+		height:rem-calc(420);
+	}
+	.empty {
+		@include breakpoint(medium) {
+			height:rem-calc(560);
+		}
+		@include breakpoint(medium) {
+			height:rem-calc(420);
+		}
+	}
+	div.content-about-us {
+		@include breakpoint(medium) {
+			position: absolute;
+			top:rem-calc(20);
+			left:0;
+			width:100%;
+		}
+	}
+}
+
+.bluebg {
+	background-color:$primary-color;
+}
+h2.white {
+	color:$white;
+}
