@@ -10,6 +10,32 @@
   </head>
   <body>
 
+  <div class="off-canvas-wrapper">
+    <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+      <div class="off-canvas position-left" id="mainMenu" data-off-canvas data-position="left">
+          <h3 class="text-center">Navigation</h3>
+          <ul class="menu vertical" data-drilldown>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li class="has-submenu is-drilldown-submenu-parent"><a href="rooms.html">Rooms</a>
+                  <ul class="menu vertical">
+                      <li><a href="room-01.html">Room 01</a></li>
+                      <li><a href="room-02.html">Room 02</a></li>
+                      <li><a href="room-03.html">Room 03</a></li>
+                      <li><a href="room-04.html">Room 04</a></li>
+                      <li><a href="room-05.html">Room 05</a></li>
+                      <li><a href="room-06.html">Room 06</a></li>
+                  </ul>
+                </li>
+                <li><a href="contactus.html">Contact Us</a></li>
+
+          </ul>
+
+  </div> <!--.off-canvas -->
+
+
+  <div class="off-canvas-content" data-off-canvas-content>
   <section class="promo-video">
     <div id="overlay"></div>
     <video id="video" autoplay loop>
@@ -29,7 +55,7 @@
           <img src="assets/images/logo.svg">
         </div>
         <div class="medium-4 columns">
-          <a class="menu-icon float-right"></a>
+          <a class="menu-icon float-right" data-open="mainMenu"></a>
         </div>
       </div>
     </div>   <!-- header-content -->
@@ -252,6 +278,12 @@
       <p class="text-center copyright">All Rights Reserved Hotel & Spa 2017.</p>
 
     </footer>
+
+  </div> <!--.off-canvas-content-->
+
+  </div> <!--off-canvas-wrapper-inner-->
+
+  </div> <!--off-canvas-wrapper-->
 
 
 
