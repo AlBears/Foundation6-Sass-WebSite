@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home: Hotel&Spa</title>
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/foundation-icons.css">
   </head>
   <body>
 
@@ -85,7 +86,7 @@
     <div class="separator-image pool-image"></div>
 
       <!-- About Us Gallery  -->
-<section class="about-us-gallery ">
+    <section class="about-us-gallery ">
       <div class="medium-6 columns empty"></div>
       <div class="medium-6 columns empty bluebg"></div>
 
@@ -150,6 +151,107 @@
   <!-- Separator image -->
   <div class="separator-image bar-image"></div>
 
+  <!-- Booking section -->
+
+   <section class="booking row">
+       <div class="large-8 large-centered columns text-center">
+         <h2>Book Now</h2>
+         <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent a tortor vulputate tellus lacinia sagittis. Donec varius quam magna, ut tristique ipsum gravida non. Mauris tincidunt tellus nec rhoncus dictum. Suspendisse non varius est.</p>
+         <a data-open="modalBook" class="button">Book Now</a>
+       </div>
+   </section>
+
+   <div class="reveal" id="modalBook" data-reveal data-animation-in="scale-in-up" data-animation-out="scale-out-down">
+       <h2 class="text-center">Booking Form</h2>
+
+       <form data-abide novalidate >
+
+         <div class="alert callout" style="display:none;" data-abide-error>
+             <p><i class="fi-alert"></i> There´re some problems in your form!  </p>
+         </div>
+
+           <div class="row columns">
+               <label>Name:
+                   <input type="text" placeholder="Your Name" required>
+                   <span class="form-error">
+                       <i class="fi-alert"></i> The name field is mandatory!!
+                   </span>
+               </label>
+           </div>
+           <div class="row columns">
+               <label>Email:
+                   <input type="text" placeholder="Your Email" required pattern="email">
+                   <span class="form-error">
+                       <i class="fi-alert"></i> The email field is mandatory!!
+                   </span>
+               </label>
+           </div>
+           <div class="row columns">
+               <label>Phone Number:
+                   <input type="text" placeholder="Your Phone Number" required pattern="number">
+                   <span class="form-error">
+                       <i class="fi-alert"></i> The phone field is mandatory!!
+                   </span>
+               </label>
+           </div>
+           <div class="row columns">
+               <label>Message:
+                   <textarea placeholder="Your Message"></textarea>
+               </label>
+           </div>
+           <div class="row columns">
+               <input type="submit" class="button" value="Submit">
+
+               <button class="button success" type="reset" value="Reset">Reset</button>
+           </div>
+
+           <button class="close-button" data-close aria-label="Close reveal" type="button">
+                 <span aria-hidden="true">&times;</span>
+           </button>
+
+       </form>
+
+   </div>
+
+   <footer>
+        <div class="row">
+            <nav class="large-5 columns">
+                <ul class="vertical menu large-horizontal">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="rooms.html">Rooms</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="contact-information large-3 columns">
+              <ul class="no-bullet vertical">
+                  <li><i class="fi-marker"></i> <span>842 State Street East New Albany, IN 47150</span></li>
+                  <li><i class="fi-telephone"></i> <span>+1-202-555-0145</span></li>
+                  <li><i class="fi-mail"></i> <span>contact@hotel&spa.com</span></li>
+              </ul>
+            </div>
+            <div class="about-us large-4 columns">
+                <h4>About Us</h4>
+                <p>Etiam mauris leo, vulputate a euismod ut, tincidunt ac nisi. Mauris nec convallis diam, vel varius augue. Cras faucibus mauris in nibh convallis aliquet.</p>
+
+                <ul class="menu social align-right">
+                    <li>
+                      <a href="http://www.twitter.com">
+                          <i class="fi-social-twitter"></i>
+                      </a>
+                    </li>
+                     <li>
+                      <a href="http://www.facebook.com">
+                          <i class="fi-social-facebook"></i>
+                      </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+      <p class="text-center copyright">All Rights Reserved Hotel & Spa 2017.</p>
+
+    </footer>
 
 
 
